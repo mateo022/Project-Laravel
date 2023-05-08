@@ -1,0 +1,1 @@
+<img src="{{ asset('assets/logoOakley.png') }}" alt="" width="150px" >

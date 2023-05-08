@@ -1,0 +1,31 @@
+.imagen-chica {
+    width: 150px;
+    height: auto;
+    margin-left: 2%;
+}
+.fond{
+    background-color: rgba(10, 2, 24, 0.103) !important;
+}
+.head{
+    display: flex;
+    background-color: rgb(2 2 24 / 15%);
+
+}
+.login{
+    /* border: 1px solid red; */
+    width: 50%;
+    margin-left: 2%;
+    margin-top: 1%;
+
+}
+.login2{
+    /* border: 1px solid blue; */
+    text-align: end;
+    width: 5%;
+    margin-left: 39%;
+    margin-right: 2%;
+}
+.login2 a>i{
+    font-size: 30px;
+
+}
