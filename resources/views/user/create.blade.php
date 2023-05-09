@@ -21,11 +21,11 @@
                 <input type="password" class="form-control" id="password" name="password" value="{{old('password')}}" placeholder="Password" required>
             </div>    
             <div class="row">
-                <div class="mb-3 col-6 d-grid">
-                    <a href="/categories" class="btn btn-danger">Back</a>
+                <div class="mb-3 col-6 d-grid" style="width: 2%; margin-right:4%">
+                    <a href="/users" class="btn-danger"><i class="bi bi-skip-backward" title="Back" style="font-size: 35px"></i></a>
                 </div>
-                <div class="mb-3 col-6 d-grid">
-                    <button type="submit" class="btn btn-primary">Create</button>
+                <div class="mb-3 col-6 d-grid" style="width: 2%;">
+                    <button type="submit" class="btn-primary"><i class="bi bi-plus-circle-dotted" title="Create New" style="font-size: 35px"></i></button>
                 </div>
             </div>
         </form>

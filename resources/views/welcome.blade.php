@@ -25,21 +25,30 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      h1
+      <br><br>
+      <h1>PRODUCTS</h1>
     <div class="d-flex flex-wrap justify-content-center" style="margin-top: 4%">
-      @foreach($category as $category)
+      @foreach($product as $product)
       <tr>
       <div class="card" style="width: 26rem; margin-bottom: 3%; margin-left: 0.5%;">
     <div class="card-body">
-      <img src="{{ Storage::url($category->img) }}" alt="Motorcyclist" width="200">
-      <h3 class="card-title">{{$category->name}}</h3>
-      <h6 class="card-subtitle mb-2 text-body-secondary">Description: {{$category->description}}</h6>
-      <h5 class="card-title">Priority: {{$category->priority}}</h5>
-      <p class="card-text">Status: {{ $category->status ? 'Active' : 'Inactive' }}</p>
+      <img src="{{ Storage::url($product->img) }}" alt="Motorcyclist" width="200">
+      <h3 class="card-title">{{$product->name}}</h3>
+      <h6 class="card-subtitle mb-2 text-body-secondary">Description: {{$product->description}}</h6>
+      <h5 class="card-title">Value: {{$product->value}}</h5>
+      <p class="card-text">Status: {{ $product->status ? 'Active' : 'Inactive' }}</p>
+      <h5 class="card-title">Category: {{$product->category->name}}</h5>
+      <a href="/login" class="btn btn-info" style="margin-top:1%; font-size: 30px"><i class="bi bi-cart-check-fill" title="Buy product"></i></a>
       <div class="d-flex flex-wrap" style="margin-top:2%;" >
     </div>    
     </div>
   </div>
       @endforeach
   </div>
+  <footer style="text-align: center; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);background: #f3ebeb;">
+    <div >
+    <span >All rights reserved -> MCC</span>
+   <img src="{{ asset('assets/logoOakley.png') }}" alt="" width="50px" >
+</div>
+</footer>
   @endsection

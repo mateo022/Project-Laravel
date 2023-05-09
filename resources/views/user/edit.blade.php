@@ -23,10 +23,10 @@
             </div>
             <div class="row">
                 <div class="mb-3 col-6 d-grid">
-                    <a href="/users" class="btn btn-danger">Back</a>
+                    <a href="/users" class="btn btn-danger"><i class="bi bi-skip-backward" title="Back"></a>
                 </div>
                 <div class="mb-3 col-6 d-grid">
-                    <button type="submit" class="btn btn-primary">Edit</button>
+                    <button type="submit" class="btn btn-primary"><i class="bi bi-pencil-square" title="Edit register"></button>
                 </div>
             </div>
         </form>

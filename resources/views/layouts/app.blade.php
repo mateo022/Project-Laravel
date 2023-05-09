@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+        <script src="{{ asset('js/script.js') }}"></script>
         <title>{{ config('app.name', 'Motorcyclis') }}</title>
 
         <!-- Fonts -->
@@ -47,5 +48,12 @@
 
         @livewireScripts
     </body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <footer style="text-align: center; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);background: #f3ebeb;">
+        <div >
+        <span >All rights reserved -> MCC</span>
+       <img src="{{ asset('assets/logoOakley.png') }}" alt="" width="50px" style="margin-left: 50%">
+    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
 </html>

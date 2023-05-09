@@ -21,8 +21,8 @@
                 <input type="text" class="form-control" id="description" name="description" placeholder="description" required value="{{old('description', $product->description)}}">
             </div>
             <div class="mb-3 col-6">
-                <label for="value" class="form-label">Value</label>
-                <input type="number" class="form-control" id="value" value="value" name="value" placeholder="Value" required value="{{old('value', $product->value)}}">
+                <label for="value" class="form-label">value</label>
+                <input type="text" class="form-control" id="value" name="value" placeholder="description" required value="{{old('value', $product->value)}}">
             </div>
             <div class="mb-3 col-5">
                 <label for="status" class="form-label">Status</label>
@@ -36,7 +36,7 @@
                     <a href="/categories" class="btn-danger"><i class="bi bi-skip-backward" title="Back" style="font-size: 35px"></i></a>
                 </div>
                 <div class="mb-3 col-6 d-grid" style="width: 2%;">
-                    <button type="submit" class="btn-primary"><i class="bi bi-plus-circle-dotted" title="Create New" style="font-size: 35px"></i></button>
+                    <button type="submit" class="btn-primary"><i class="bi bi-pencil-square" title="Edit register" style="font-size: 35px"></i></button>
                 </div>
             </div>
         </form>

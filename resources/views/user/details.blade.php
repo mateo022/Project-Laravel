@@ -5,6 +5,7 @@
       </h2>
   </x-slot>
 <div class="container" style="margin-top: 4%">
+  <a href="/users" class="btn-danger"><i class="bi bi-skip-backward" title="Back" style="font-size: 35px; margin-bottom: 1%; margin-top:4%;margin-left: 46%"></i></a>
   <div class="d-flex flex-wrap justify-content-center">
     <tr>
     <div class="card" style="width: 26rem; margin-bottom: 3%; margin-left: 0.5%;">

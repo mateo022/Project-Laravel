@@ -36,7 +36,7 @@
                     <a href="/categories" class="btn-danger"><i class="bi bi-skip-backward" title="Back" style="font-size: 35px"></i></a>
                 </div>
                 <div class="mb-3 col-6 d-grid" style="width: 2%;">
-                    <button type="submit" class="btn-primary"><i class="bi bi-plus-circle-dotted" title="Create New" style="font-size: 35px"></i></button>
+                    <button type="submit" class="btn-primary"><i class="bi bi-pencil-square" title="Edit register" style="font-size: 35px"></i></button>
                 </div>
             </div>
         </form>

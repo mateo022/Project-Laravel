@@ -23,7 +23,7 @@
     <form action="/products/{{$product->slug}}"   method="post">
             @csrf
             @method('DELETE')
-             <button type="submit" class="btn-danger" onclick="return confirm('¿Esta seguro que desea eliminar la categoria'+' '+ '{{$product->slug}}?')" title="Delete product" style="font-size: 30px"><i class="bi bi-trash"></i></button>
+             <button type="submit" class="btn-danger" onclick="return confirm('¿Are you sure you want to delete the product '+' '+ '{{$product->slug}}?')" title="Delete product" style="font-size: 30px"><i class="bi bi-trash"></i></button>
         </form>
   </div>    
   </div>
