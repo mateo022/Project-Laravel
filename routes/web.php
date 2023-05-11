@@ -32,7 +32,7 @@ Route::middleware([
     })->name('dashboard');
 
     Route::resource('categories',
-    App\Http\Controllers\CategoryController::class);
+    App\Http\Controllers\CategoryController::class)->except(['register']);
     
     Route::resource('products',
     App\Http\Controllers\ProductController::class);
@@ -40,8 +40,13 @@ Route::middleware([
     Route::resource('users',
     App\Http\Controllers\UserController::class);
 
-    Route:: get('/register', function (){
-        return view( 'auth.register');
-    })->name('register');
+    Route::get('/register', [Laravel\Jetstream\Http\Controllers\RegistrationController::class, 'create'])
+      ->middleware(['guest'])
+      ->name('register');
+
+    // Route:: get('/register', function (){
+    //     return view( 'auth.register');
+    // })->name('register');
+
 });
 
